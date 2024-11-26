@@ -1,9 +1,11 @@
+/* Ensure full height for the page */
 html, body {
   height: 100%;
   margin: 0; /* Remove default margin to prevent gaps */
+  padding: 0;
 }
 
-/* Base Styles */
+/* Body background */
 body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
@@ -14,9 +16,10 @@ body {
   color: white;
   overflow: hidden;
   text-align: center;
+  background-attachment: fixed; /* Fixes the background while scrolling */
 }
 
-/* Coming Soon Container */
+/* Ensure that the main container grows to fill the full viewport height */
 .coming-soon-container {
   display: flex;
   flex-direction: column;
@@ -25,7 +28,8 @@ body {
   text-align: center;
   animation: fadeIn 2s ease-in-out;
   padding: 20px;
-  flex-grow: 1; /* Make sure it fills the space */
+  flex-grow: 1; /* Ensures the container fills the remaining space */
+  min-height: 100vh; /* Make sure it covers the full height of the viewport */
 }
 
 /* Heading - Neon Effect */
