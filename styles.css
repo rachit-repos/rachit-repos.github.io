@@ -1,14 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margin to prevent gaps */
+}
+
 /* Base Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #FFB347, #FF7F50, #FF4500); /* Enhanced orange gradient */
+  background: linear-gradient(135deg, #FFB347, #FF7F50, #FF4500); /* Orange gradient */
   color: white;
   overflow: hidden;
   text-align: center;
+}
+
+/* Coming Soon Container */
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  padding: 20px;
+  flex-grow: 1; /* Make sure it fills the space */
 }
 
 /* Heading - Neon Effect */
